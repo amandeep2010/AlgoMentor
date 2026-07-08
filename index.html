@@ -635,7 +635,7 @@
         const loadingIndicator = document.getElementById('loadingIndicator');
 
        
-        const GEMINI_API_KEY = "AQ.Ab8RN6KL_aCjG40Z07lFePQk1inZ0jE6MCQ9qxMu8wv9lJCH7Q"; // YOUR ACTUAL API KEY
+        const NEXT_PUBLIC_GEMINI_API_KEY = "AQ.Ab8RN6KL_aCjG40Z07lFePQk1inZ0jE6MCQ9qxMu8wv9lJCH7Q"; // YOUR ACTUAL API KEY
         // ========================================================================
         const MODEL_NAME = "gemini-3.5-flash"; // Or your preferred model
 
@@ -684,7 +684,7 @@ When a student presents a problem or asks for help with a concept, guide them se
             loadingIndicator.style.display = 'block';
             askButton.disabled = true;
 
-            const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${GEMINI_API_KEY}`;
+            const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${NEXT_PUBLIC_GEMINI_API_KEY}`;
 
             const requestBody = {
                 contents: [
